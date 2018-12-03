@@ -1,29 +1,29 @@
-public class Mark implements Gradable {
-    int mark;
+public class Mark<T> implements Gradable<T> {
+    T mark;
 
 
-    public Mark(int mark){
+    public Mark(T mark){
         this.mark=mark;
     }
 
     @Override
-    public int sum() {
+    public T sum() {
         return mark;
     }
 
     @Override
-    public int max() {
+    public T max() {
         return mark;
     }
 
     @Override
-    public int min() {
+    public T min() {
         return mark;
     }
 
-    @Override
-    public double avg() {
-        return mark;
-    }
+//    @Override
+//    public T avg() {
+//        return mark;
+//    }
 
 }

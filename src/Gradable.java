@@ -1,6 +1,6 @@
-public interface Gradable {
-    int sum();
-    int max();
-    int min();
-    double avg();
+public interface Gradable<T> {
+    T sum();
+    T max();
+    T min();
+//    T avg();
 }
